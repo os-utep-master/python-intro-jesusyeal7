@@ -14,10 +14,11 @@ textFname = sys.argv[1]
 outputFname = sys.argv[2]
 inputFname = sys.argv[3]
 
+
 #first check to make sure program exists
 if not os.path.exists("wordCount.py"):
     print ("wordCount.py doesn't exist! Exiting")
-    exit()
+    exit()#HEllo
 
 #make sure text files exist
 if not os.path.exists(textFname):
