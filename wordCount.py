@@ -24,7 +24,7 @@ fileOutput = sys.argv[2]
 def countCharacters(inputIn, txtFile):
 
 # This for loop is printing the characters with an if statement inside 
-    for characters in input_File.read().split():
+    for characters in input_File.read().split(): # .read() and .split() Reads and splits the characters/words 
         characters = characters.lower() # Makes sure all letters are lower case
         characters = characters.translate(None, string.punctuation)
         #print(Characters)
@@ -41,7 +41,7 @@ def dictionaryChar(fileOutput, txtFile):
     fileOutput = open(fileOutput,"w+")
     for i in sorted(txtFile):
         fileOutput.write("%s %d \n" % (i, txtFile[i]))
-    print("Completed")
+    print("Completed") # Print out message when task is done
 
 # This are methods that are being called
 txtFile = {}
